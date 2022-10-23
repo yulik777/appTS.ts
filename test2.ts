@@ -42,6 +42,24 @@ data: IDataSuccess;
     data: IDataFailed;
       }
 
+//Пишем к нему typeGuard
+type f = (res: IResponseSuccess | IResponseFailed) => number;
+type Res = IResponseSuccess | IResponseFailed;
+
+function isSuccess(res: Res): res is IResponseSuccess{
+  if(res.status === PaymentStatus.Success){
+    return true;
+  }
+  return false;
+  }
+
+// function getIdRfomData(res: Res): number {
+// if (isSuccess(res)) {
+//   return res.data.databaseId;
+// } else {
+//   throw new Error(res.data.errorMessage);
+// }
+// }
     //   function get(): IResponseSuccess | IResponseFailed {
 
     //   }

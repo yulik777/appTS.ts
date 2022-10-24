@@ -34,3 +34,24 @@ payment.unholdPayment();
 console.log(payment);
 const time = payment.getPaymentLifeTime();
 console.log(time);
+
+
+// Пример перегрузки методов
+//Задание - добавить скилы
+
+class UserTim {
+    skills!: string[];
+
+    addSkill(skill: string): void;
+    addSkill(skill: string[]): void;
+    addSkill (skillorSlills: string | string[]){
+if (typeof skillorSlills == 'string'){
+    this.skills.push(skillorSlills)
+} else {
+    this.skills.concat(skillorSlills);
+}
+    }
+}
+ 
+
+

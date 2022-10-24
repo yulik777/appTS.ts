@@ -1,15 +1,21 @@
 class UserMik {
     _login: string;
     password: string;
+    createdAt: Date;
 
-    set login(l: string) { //setter - передать свойство
-        this._login = 'user-' + 1; //добавляем приставку к логину 'user-' 
+    set login(l: string) { //setter - присвоение свойств
+        this._login = 'user-' + l; //добавляем приставку к логину 'user-' 
+         this.createdAt = new Date;
     }
  
      get login(){ // геттер - получить свойство
-return 'no login';
+return  this._login;
      }
 }
+
+// async getPassword (p: string) {
+
+// }
 
 const userMik = new UserMik();
 userMik.login = 'myLogin';

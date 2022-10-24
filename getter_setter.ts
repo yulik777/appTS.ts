@@ -21,3 +21,38 @@ const userMik = new UserMik();
 userMik.login = 'myLogin';
 console.log(userMik); // user - myLogin
 console.log(userMik.login); // no login
+
+
+//Implements
+
+interface ILogger{
+    log(...args: any[]):void;//принимает аргументы  : и ничего не возвращает
+     error(...args: any[]): void;
+}
+
+class Logger implements ILogger {
+    log(...args: any[]): void {
+        console.log(...args);
+    }
+   async  error(...args: any[]): Promise<void> {
+        throw new Error("Method not implemented.");
+    }
+    }
+    
+    interface IPayable {
+        pay(paymentId: number): void;
+        price?: number;
+    }
+  interface IDeletable{
+    delete(): void;
+  }
+    class UserBin implements IPayable, IDeletable{
+        delete(): void {
+            throw new Error("Method not implemented.");
+        }
+        pay(paymentId: number): void {
+            ///;
+        }
+        price?: number | undefined;
+        
+    }

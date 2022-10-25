@@ -37,4 +37,34 @@ override pay(date?: Date){// override переопредилили метод pa
 }
 }
 
-new PersistedPayment().pay
+new PersistedPayment();
+
+class UserLik {
+    name: string = 'user';
+        constructor(){
+        console.log(this.name);
+    }
+}
+
+class AdminLik extends UserLik {
+    name: string ='admin';
+
+    constructor(){
+        super();
+        console.log(this.name);
+    }
+}
+
+new AdminLik;
+
+
+//newError('');
+
+class HttpError extends Error{
+    code: number;
+
+    constructor (message: string, code?: number) {
+        super (message);
+        this.code = code ?? 500;
+    }
+}

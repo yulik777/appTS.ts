@@ -46,5 +46,5 @@ class MuLogger extends Loggger{
 
 const logger = new MuLogger();
 logger.logWithDate('Hello');
-//22.10.22 "Hello"
+//console: 22.10.22 "Hello" 
 

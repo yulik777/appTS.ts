@@ -11,7 +11,7 @@ const res = {
 
 if (res.statusCode === StatusCode.Success){
 
-}// proverka
+}//проверка
 
 
 function action (status: StatusCode) {

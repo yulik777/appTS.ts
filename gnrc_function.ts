@@ -11,6 +11,29 @@ function getSplitedHalf<T>(data: Array<T>): Array<T> {
 }
 getSplitedHalf<number>([1, 3, 4]);
 
+//Дженерик в типах (описание типа функции)
+
+const split:<T>(data: Array<T>) => Array<T> = getSplitedHalf;
+
+// Example
+interface ILogLine<T> {
+    timeStamp: Date;
+    data: T
+}
+//ili 
+type ILogLineType <T> = {
+    timeStamp: Date;
+    data: T
+}
+
+
+const logLine: ILogLine <{ a: number}> = {
+    timeStamp: new Date(),
+    data: {
+        a:1
+    }
+}
+
 // Function которая принимает тип и возвращает сроку
 
 function toString<T>(data: T): string | undefined{

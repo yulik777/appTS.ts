@@ -28,4 +28,4 @@ function ExtendList<TBase extends ListType>(Base: TBase){
 
 const list = ExtendList(List);
 const rees = new list(['один', 'два']);
-//console.log(rees.first()); //один
+console.log(rees.first()); //один

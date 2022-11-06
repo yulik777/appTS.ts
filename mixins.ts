@@ -11,11 +11,7 @@ type ListType = GConstructor<List>;
 
 //обычный extend
 
-class ExtendedListClass extends List {
-    first() {
-        return this.items[0];
-    }
-}
+
 
 //mixin
 function ExtendList<TBase extends ListType>(Base: TBase){

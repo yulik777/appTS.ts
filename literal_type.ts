@@ -10,14 +10,3 @@ T extends `can${infer R}` ? R : never;
 
 type T = ReadorWriteBulk<Access>;
 
-//пример
-
-type ErrororSuccess = 'error'| 'success';
-
-type ResponseT = {
-    result: `http${Capitalize<ErrororSuccess>}`
-}
-
-const f: ResponseT = {
-    result: 'httpSuccess'
-}

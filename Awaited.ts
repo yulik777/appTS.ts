@@ -1,8 +1,3 @@
-type A = Awaited<Promise<string>>;
-//Awaited -дженерик, куда мы можем передать промис
-//В результате А будет string
-
-type A2 = Awaited<Promise<Promise<string>>>;//тоже А2 будет string (расскрутит всю строчку)
 
 //Example
 

@@ -38,5 +38,4 @@ constructor(Ageorname?: string | number){
 }
 
 const user6 = new User6('Yulik');
-const useeer = new User6();
-const userrr = new User6(33);
+

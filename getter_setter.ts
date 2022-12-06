@@ -17,6 +17,10 @@ return  this._login;
 
 // }
 
+const userMik = new UserMik();
+userMik.login = 'myLogin';
+console.log(userMik); // user - myLogin
+console.log(userMik.login); // no login
 
 
 //Implements

@@ -21,3 +21,4 @@ type ModifierToAccess<Type> = {
     //єто значіт что ми берем каждий із ключей і подставляем boolean
 }
 
+type UserAccess22 = ModifierToAccess<UserRolees>;

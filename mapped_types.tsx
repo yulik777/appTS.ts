@@ -16,9 +16,3 @@ type UserAccess11 = {
 
 //делаем с помощью mapped
 
-type ModifierToAccess<Type> = {
-    [Property in keyof Type]: boolean;
-    //єто значіт что ми берем каждий із ключей і подставляем boolean
-}
-
-type UserAccess22 = ModifierToAccess<UserRolees>;

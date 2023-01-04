@@ -21,7 +21,7 @@ const user11: User11 = {
 
 const nameUser = user11['name']; //обращение по индексу
 const roleNames = 'roles';
-//Дальше хотим получить типы полей
+
 
 type rolesType = User11['roles'];
 type rolesType2 = User11 [typeof roleNames] //если обращаемся череез переменную

@@ -4,9 +4,6 @@ const n: null = null;
 interface User3 {
     name: string;
 }
-//null - заданый неопределенный объект
-//undefined - не заданный обьект
-
 
 function getUser() {
     if (Math.random() > 0.5){ //ecли рандом возвращает < 0.5 

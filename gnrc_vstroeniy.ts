@@ -8,7 +8,4 @@ async function testt () {
   });
 }
 
-const check: Record<string, boolean> = { // в  Record можна записать 2 джененрика: ключ и значение
-    drive: true,
-    kpp: false
-};
+

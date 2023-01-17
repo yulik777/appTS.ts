@@ -24,4 +24,13 @@ console.log(usxers.toString()); //Vas, Max
 //правильная связка юзера и пеймента 
 //такая композиция упростит код и уменьшит связанность user payment
 
+class UserwithPayment {
+    user: User;
+    payment: Payment;
+
+    constructor(user: User, payment: Payment){
+        this.payment = payment;
+        this.user = user;
+    }
+}
 

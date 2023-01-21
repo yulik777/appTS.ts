@@ -29,3 +29,5 @@ return array.reduce<IGroup<T>>((map:IGroup<T>, item) => {
 }, {})
 }
 
+const res3 = group<Data> (data, 'group');
+console.log(res3);
